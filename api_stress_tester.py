@@ -8,8 +8,8 @@ from threading import Thread, Lock
 
 # API URL to send requests
 API_URL = 'https://example.com'
-MAX_CALLS = 900
-REQUESTS_PER_MINUTE = 834
+MAX_CALLS = 200
+REQUESTS_PER_MINUTE = 200
 SECONDS_BETWEEN_REQUESTS = 60 / REQUESTS_PER_MINUTE
 counter = 0
 counter_lock = Lock()
