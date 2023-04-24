@@ -1,3 +1,28 @@
+'''
+README
+
+This script sends multiple requests to a specified API URL in parallel using multithreading.
+It's designed to be easily customizable to control the rate and the maximum number of requests sent.
+
+Features:
+- Customizable API endpoint
+- Customizable request method (default is POST)
+- Customizable maximum number of requests
+- Customizable rate of requests per minute
+- Multithreading support for parallel requests
+- JSON payload generation with request number and timestamp
+
+Usage:
+1. Set the API_URL variable to the desired API endpoint.
+2. Set the MAX_CALLS variable to the maximum number of requests you want to send.
+3. Set the REQUESTS_PER_MINUTE variable to control the rate of requests sent per minute.
+4. Optionally, change the default API method by setting the `api_method` variable in the `__main__` block.
+5. Adjust the number of threads in the `threads` list comprehension to control the level of parallelism.
+
+When the script is executed, it will start sending requests to the specified API_URL with the chosen method
+and at the specified rate. The JSON payload of each request will contain the request number and a timestamp.
+'''
+
 # Import required libraries
 import requests
 import json

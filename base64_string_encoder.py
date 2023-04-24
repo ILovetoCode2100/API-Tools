@@ -1,3 +1,17 @@
+'''
+README
+
+This script encodes a given string into a Base64 encoded string. It includes error handling for common issues
+that may arise during the encoding process, such as encoding and decoding issues.
+
+Usage:
+1. Replace the string_to_encode variable with the string you want to encode.
+2. Run the script.
+
+The script will attempt to encode the string and print the resulting Base64 encoded string if successful. If any
+errors occur during the encoding process, an appropriate error message will be printed instead.
+'''
+
 import base64
 
 string_to_encode = "Hello, World!"  # replace with the string you want to encode
